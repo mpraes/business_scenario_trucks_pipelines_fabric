@@ -1,7 +1,7 @@
 # Data Engineering Pipelines created on Ms Fabric
 
 ## Project Overview
-This project implements data engineering pipelines using Microsoft Fabric for processing and analyzing ice truck data. The solution leverages modern data engineering practices and Microsoft's Fabric platform for efficient data processing and analytics.
+This project implements data engineering pipelines using Microsoft Fabric for processing and analyzing ice truck data. The solution leverages modern data engineering practices and Microsoft's Fabric platform for efficient data processing and analytics. This is kind of Lakehouse Architecture, but some silver table should be like gold layers to people who consumes.
 
 ## Project Structure
 ```
@@ -13,7 +13,7 @@ business_scenario_trucks_pipelines_fabric/
 │   ├── processed/                  # Processed data files
 │   └── curated/                    # Curated data for analysis
 ├── notebooks/                      # Jupyter notebooks for development
-├── pipelines/                      # Data pipeline definitions
+├── pipelines_data_factory/         # Data pipeline definitions
 ├── scripts/                        # Utility scripts and tools
 └── README.md                       # Project documentation
 ```
@@ -27,18 +27,13 @@ business_scenario_trucks_pipelines_fabric/
 
 ## Technology Stack
 - Microsoft Fabric
-- Data Engineering Tools
-- Data Processing Frameworks
-- Analytics Tools
 
-## Getting Started
-[To be added: Setup instructions and prerequisites]
+## Sources
+- Azure SQL Database (simulating an Back-end 3NF normal form system ERP sales)
+- APIs (Weather)
+- Data Lake files (csv, xls) which has some public data like gdp, fuel prices, inflation, etc.
 
-## Contributing
-[To be added: Contribution guidelines]
-
-## License
-[To be added: License information]
-
+## Stage
+- When implemented in a Fabric environment, this project artefacts is in the stage of just consuming with reports like Power BI or Tableau.
 
 
